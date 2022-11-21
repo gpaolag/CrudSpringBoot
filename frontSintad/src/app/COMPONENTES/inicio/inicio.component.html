@@ -1,0 +1,49 @@
+<div class="container principal">
+    <button class="btn btn-primary" [routerLink]="['/inicio']" routerLinkActive="router-link-active">Entidades</button>
+    <button class="btn btn-primary" [routerLink]="['/documentos']" routerLinkActive="router-link-active">Tipo de
+        Contribuyente</button>
+    <button class="btn btn-primary" [routerLink]="['/tiposdocumentos']" routerLinkActive="router-link-active">Tipo de
+        Documentos</button>
+</div>
+<div class="container">
+    <button class="btn btn-primary" [routerLink]="['/agregar']" routerLinkActive="router-link-active">Agregar
+        Entidad</button>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col center">Entidades</th>
+            </tr>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Tipo de documento</th>
+                <th scope="col">Numero de documento</th>
+                <th scope="col">Razon social</th>
+                <th scope="col">Nom. Comercial</th>
+                <th scope="col">Tipo Cont.</th>
+                <th scope="col">Direccion</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Estado</th>
+                <th>#</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let entidad of lista">
+                <td>{{entidad.id_entidad}}</td>
+                <td>{{entidad.id_tipo_documento}}</td>
+                <td>{{entidad.nro_documento}}</td>
+                <td>{{entidad.razon_social}}</td>
+                <td>{{entidad.nombre_comercial}}</td>
+                <td>{{entidad.id_tipo_contribuyente}}</td>
+                <td>{{entidad.direccion}}</td>
+                <td>{{entidad.telefono}}</td>
+                <td>{{entidad.estado}}</td>
+                <td id="buttons">
+                    <button class="btn btn-danger" (click)="eliminar(entidad.id_entidad)">Eliminar</button>
+                    <button class="btn btn-warning" [routerLink]="['/editar/',entidad.id_entidad]"
+                        routerLinkActive="router-link-active">Modificar</button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

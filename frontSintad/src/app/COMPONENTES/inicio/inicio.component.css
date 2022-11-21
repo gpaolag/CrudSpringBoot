@@ -1,0 +1,17 @@
+.container.principal {
+  display: flex;
+  margin: 15px;
+  justify-content: space-evenly;
+}
+.principal button {
+  background-color: darkgreen;
+  font-weight: 600;
+  font-size: 20px;
+}
+#buttons {
+  display: flex;
+  flex-direction: column;
+}
+#buttons button {
+  margin: 5px;
+}

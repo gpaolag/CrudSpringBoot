@@ -1,0 +1,34 @@
+<div class="container principal">
+    <button class="btn btn-primary" [routerLink]="['/inicio']" routerLinkActive="router-link-active">Entidades</button>
+    <button class="btn btn-primary" [routerLink]="['/documentos']" routerLinkActive="router-link-active">Tipo de
+        Contribuyente</button>
+    <button class="btn btn-primary" [routerLink]="['/tiposdocumentos']" routerLinkActive="router-link-active">Tipo de
+        Documentos</button>
+</div>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col center">Documentos</th>
+            </tr>
+            <tr>
+                <th scope="col">Id de Documentos</th>
+                <th scope="col">Codigo</th>
+                <th scope="col">Nombre</th>
+                <!-- <th>#</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let documento of listadocumentos">
+                <td>{{documento.id_tipo_documento}}</td>
+                <td>{{documento.codigo}}</td>
+                <td>{{documento.nombre}}</td>
+                <!-- <td id="buttons">
+                    <button class="btn btn-danger">Eliminar</button>
+                    <button class="btn btn-warning" routerLinkActive="router-link-active">Modificar</button>
+                </td> -->
+            </tr>
+
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,33 @@
+<div class="container">
+    <form action="">
+        <label for="id_tipo_documento ">Tipo Doc.</label>
+        <select name="id_tipo_documento " [(ngModel)]="entidadNueva.id_tipo_documento">
+            <option [value]="item.id" *ngFor="let item of listadocumentos">{{item.nombre}}</option>
+        </select>
+        <br>
+        <label for="nro_documento">Nro Documento</label>
+        <input type="text" id="nro_documento" name="nro_documento" [(ngModel)]="entidadNueva.nro_documento">
+        <br>
+        <label for="razon_social">Razon Social</label>
+        <input type="text" id="razon_social" name="razon_social" [(ngModel)]="entidadNueva.razon_social">
+        <br>
+        <label for="nombre_comercial">Nombre Comercial</label>
+        <input type="text" id="nombre_comercial" name="nombre_comercial" [(ngModel)]="entidadNueva.nombre_comercial">
+        <br>
+        <label for="direccion">Direccion</label>
+        <input type="text" id="direccion" name="direccion" [(ngModel)]="entidadNueva.direccion">
+        <br>
+        <label for="telefono">Telefono</label>
+        <input type="text" id="telefono" name="telefono" [(ngModel)]="entidadNueva.telefono">
+        <br>
+        <label for="estado">Estado (0 / 1)</label>
+        <input type="text" id="estado" name="estado" [(ngModel)]="entidadNueva.estado">
+        <br>
+        <label for="id_tipo_contribuyente ">Contribuyente</label>
+        <select name="id_tipo_contribuyente " [(ngModel)]="entidadNueva.id_tipo_contribuyente">
+            <option [value]="item.id" *ngFor="let item of listacontribuyentes">{{item.nombre}}</option>
+        </select>
+        <br>
+        <button class="btn btn-primary" (click)="agregarEntidad()">Guardar</button>
+    </form>
+</div>
