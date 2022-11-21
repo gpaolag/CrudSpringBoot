@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-11-2022 a las 07:13:35
+-- Tiempo de generación: 21-11-2022 a las 17:10:44
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 7.3.29
 
@@ -52,8 +52,7 @@ INSERT INTO `tb_entidad` (`id_entidad`, `id_tipo_documento`, `nro_documento`, `r
 (6, 3, '20545412528', 'OASIS FOODS S.A.C.', '', 2, 'CAL. FRANCISCO MASIAS NRO. 370 URB. SAN EUGENIO (PISO 7) LIM', '', b'1'),
 (7, 3, '20510620195', 'INVERSIONES PRO3 SAC', '', 2, 'AV. AUTOPIDTA RAMIRO PRIALE LOTE. 02 A.V. PROP HUERTOS DE HU', '', b'1'),
 (8, 3, '20498383361', 'REPUESTOS DAVID DIESEL E.I.R.L.', '', 2, 'CAR.VIA EVITAMIENTO MZA. 857 LOTE. 7 SEC. IRRIGACION EL CURAL 1 AREQUIPA - AREQUIPA - CERRO COLORADO', '', b'1'),
-(9, 6, 'CNAH00003', 'ANHUI HAYVO PROTECTIVE PRODUCT MANUFACTURING CO.,LTD', '', 4, '173 FENGLE AVENUE,ECNOMIC DEVELOPMENT ZONE,QUANJIAO COUNTY', '', b'1'),
-(11, 3, '1234', 'prueba', 'prueba', 2, 'prueba', '12447', b'0');
+(9, 6, 'CNAH00003', 'ANHUI HAYVO PROTECTIVE PRODUCT MANUFACTURING CO.,LTD', '', 4, '173 FENGLE AVENUE,ECNOMIC DEVELOPMENT ZONE,QUANJIAO COUNTY', '', b'1');
 
 -- --------------------------------------------------------
 
@@ -134,7 +133,7 @@ ALTER TABLE `tb_tipo_documento`
 -- AUTO_INCREMENT de la tabla `tb_entidad`
 --
 ALTER TABLE `tb_entidad`
-  MODIFY `id_entidad` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_entidad` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `tb_tipo_contribuyente`
